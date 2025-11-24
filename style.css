@@ -1,5 +1,6 @@
 .nav-row {
-  min-height: 5em;
+  min-height: 3em;
+  max-height: 200px;
 }
 #logo {
   width: 8em;

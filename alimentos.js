@@ -51,5 +51,3 @@ for (let i = 0; i < listaProdutos.length; i++) {
   infoCard.appendChild(precoProdutos)
   infoCard.appendChild(botaoProdutos)
 }
-
-console.log('oi')
