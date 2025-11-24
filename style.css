@@ -1,18 +1,76 @@
-.card {
-  width: 18rem;
+.nav-row {
+  min-height: 5em;
+}
+#logo {
+  width: 8em;
+  margin-left: 5em;
+}
+
+#dog {
+  width: 500px;
+  margin: auto;
+  background-color: antiquewhite;
+}
+
+.banner-row {
+  background-color: antiquewhite;
+  padding: 2em;
 }
 
 .card-img-top {
-  padding: 20px;
+  max-width: 80%;
+  margin: auto;
+  margin-top: 0.8em;
+}
+.card-row {
+  padding: 2em;
+  background-color: #bee7f9;
 }
 
-/* Defina uma altura para a sua classe personalizada */
-.custom-height {
-  height: 400px; /* Altere para a altura desejada */
-  overflow: hidden; /* Garante que nada transborde */
+.card {
+  max-width: 15em;
+  min-height: 20em;
 }
 
-.cachorro {
-  width: 100px;
-  margin-left: 25%;
+.card-text {
+  font-weight: 800;
+  font-size: 1.2em;
+}
+
+.footer-row {
+  background-color: rgb(229, 138, 72);
+}
+
+.pagamento {
+  background-color: rgb(248, 248, 248);
+  padding: 2em;
+}
+
+.bar {
+  background-color: #0ccbff;
+}
+
+.pagamentos {
+  margin-top: 1em;
+  background-color: white;
+  padding: 1em;
+  border-radius: 0.6em;
+}
+
+.categorias {
+  font-size: 0.8em;
+  color: aliceblue;
+  padding: 1em;
+}
+
+.texto-footer {
+  font-size: 0.8em;
+  color: aliceblue;
+  padding: 1em;
+}
+
+.form-row {
+  max-width: 30em;
+  margin: auto;
+  margin-top: 2em;
 }

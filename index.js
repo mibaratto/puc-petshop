@@ -6,7 +6,7 @@ const listaProdutos = [
     preco: 'R$ 22,45',
   },
   {
-    descricao: 'Peiteira Tradicional - Peiteira Tradicional',
+    descricao: 'Peiteira Tradicional - Tamanho M',
     imagem: './img/acessorio_02.jpg',
     alt: 'imagem de uma Peiteira Tradicional para cães',
     preco: 'R$ 32,22',

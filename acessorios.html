@@ -1,91 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <script src="index.js" defer></script>
+    <script src="acessorios.js" defer></script>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Petshop Acessórios</title>
+    <title>Acessórios</title>
   </head>
   <body>
-    <div id="teste-acessorios"></div>
-    <header>
-      <div>
-        <a href="/puc-petshop/index.html"
-          ><h1>Bem vindo ao Petshop Zen Pet</h1></a
-        >
-        <h2>Tudo para deixar seu melhor amigo tranquilo</h2>
-        <hr width="800" align="left" />
+    <div class="container-fluid justify-content-center">
+      <!-- NAVEGACAO -->
+      <div class="row nav-row">
+        <nav class="col-g-1 navbar navbar-expand-lg bg-body-tertiary">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="/index.html"
+              ><img src="./img/logo.png" id="logo"
+            /></a>
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto">
+              <li class="nav-item">
+                <a
+                  href="/alimentos.html"
+                  class="nav-link active"
+                  aria-current="page"
+                  >Alimentos</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  href="/acessorios.html"
+                  class="nav-link active"
+                  aria-current="page nav-link"
+                  >Acessórios</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  href="/higiene.html"
+                  class="nav-link active"
+                  aria-current="page"
+                  >Higiene e Limpeza</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  href="/servicos.html"
+                  class="nav-link active"
+                  aria-current="page"
+                  >Serviços</a
+                >
+              </li>
+            </ul>
+          </div>
+        </nav>
       </div>
 
-      <nav>
-        <h3>Aqui tem tudo que seu pet precisa</h3>
-        <ul>
-          <li><a href="/puc-petshop/alimentos.html">Alimentos</a></li>
-          <li><a href="/puc-petshop/acessorios.html">Acessórios</a></li>
-          <li><a href="/puc-petshop/higiene.html">Higiene e Limpeza</a></li>
-          <li><a href="/puc-petshop/servicos.html">Serviços</a></li>
-        </ul>
-        <hr width="400" align="left" />
-      </nav>
-    </header>
-    <h1>Acessórios</h1>
-    <br />
-    <article>
-      <div>
-        <h4>Comedouro e Bebedouro Duplo Inox - 236 ml</h4>
-        <img
-          src="./img/acessorio_01.jpg"
-          alt="embalagem com lenços umedeciodos para cães"
-          width="200"
-        />
-        <h3>R$ 22,45</h3>
-        <button>Comprar</button><br /><br />
-        <hr width="400" align="left" />
-      </div>
-      <br />
-      <div>
-        <h4>Peiteira Tradicional - Tam. M</h4>
-        <img
-          src="./img/acessorio_02.jpg"
-          alt="embalagem com lenços umedeciodos para cães"
-          width="200"
-        />
-        <h3>R$ 32,22</h3>
-        <button>Comprar</button><br /><br />
-        <hr width="400" align="left" />
-      </div>
-      <br />
-      <div>
-        <h4>Brinquedo Varinha Para Gato - Azul</h4>
-        <img
-          src="./img/acessorio_03.jpg"
-          alt="embalagem com lenços umedeciodos para cães"
-          width="200"
-        />
-        <h3>R$ 11,30</h3>
-        <button>Comprar</button><br /><br />
-        <hr width="800" align="left" />
-      </div>
-      <br />
-    </article>
-    <footer>
-      <p>Formas de pagamento</p>
-      <img src="/img/formasPagamento.jpg" alt="" width="500" /><br /><br />
-      <p>Categorias</p>
-      <ul>
-        <li><a href="/puc-petshop/alimentos.html">Alimentos</a></li>
-        <li><a href="/puc-petshop/acessorios.html">Acessórios</a></li>
-        <li><a href="/puc-petshop/higiene.html">Higiene e Limpeza</a></li>
-        <li><a href="/puc-petshop/servicos.html">Serviços</a></li>
-      </ul>
-      <br />
-      <p>
-        PetZensupermarket Comércio de Produtos para Animais S.A CNPJ:
-        30.864.846/0001-90 <br />
-        Compra segura - A Zen Pet garante segurança para suas informações
-        pessoais e financeiras Copyright 2025© Todos os direitos reservados à
-        Zen Pet.
-      </p>
-    </footer>
+      <!-- PRODUTOS -->
+      <section class="row card-row">
+        <div class="col-g-1">
+          <article class="container">
+            <div class="row justify-content-center" id="acessorios"></div>
+          </article>
+        </div>
+      </section>
+
+      <!-- FOOTER -->
+      <footer class="row footer-row">
+        <div class="col-g-1">
+          <div class="pagamentos">
+            <p>Formas de pagamento</p>
+            <img src="/img/formasPagamento.jpg" alt="" width="500" />
+          </div>
+          <div class="row">
+            <div class="col-g-1">
+              <ul class="nav">
+                <li class="nav-item categorias">
+                  <a
+                    href="/puc-petshop/alimentos.html"
+                    class="nav-link active categorias"
+                    aria-current="page"
+                    >Alimentos</a
+                  >
+                </li>
+                <li class="nav-item categorias">
+                  <a
+                    href="/puc-petshop/acessorios.html"
+                    class="nav-link active"
+                    aria-current="page"
+                    >Acessórios</a
+                  >
+                </li>
+                <li class="nav-item categorias">
+                  <a
+                    href="/puc-petshop/higiene.html"
+                    class="nav-link active"
+                    aria-current="page"
+                    >Higiene e Limpeza</a
+                  >
+                </li>
+                <li class="nav-item categorias">
+                  <a
+                    href="/puc-petshop/servicos.html"
+                    class="nav-link active"
+                    aria-current="page"
+                    >Serviços</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div>
+            <p class="texto-footer">
+              PetZensupermarket Comércio de Produtos para Animais S.A CNPJ:
+              30.864.846/0001-90 <br />
+              Compra segura - A Zen Pet garante segurança para suas informações
+              pessoais e financeiras Copyright 2025© Todos os direitos
+              reservados à Zen Pet.
+            </p>
+          </div>
+        </div>
+      </footer>
+    </div>
   </body>
 </html>
