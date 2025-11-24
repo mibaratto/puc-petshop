@@ -1,0 +1,18 @@
+.card {
+  width: 18rem;
+}
+
+.card-img-top {
+  padding: 20px;
+}
+
+/* Defina uma altura para a sua classe personalizada */
+.custom-height {
+  height: 400px; /* Altere para a altura desejada */
+  overflow: hidden; /* Garante que nada transborde */
+}
+
+.cachorro {
+  width: 100px;
+  margin-left: 25%;
+}

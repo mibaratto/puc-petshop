@@ -1,102 +1,159 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <script src="index.js" defer></script>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Petshop</title>
   </head>
   <body>
-    <header>
-      <div>
-        <h1>Bem vindo ao Petshop Zen Pet</h1>
-        <h2>Tudo para deixar seu melhor amigo tranquilo</h2>
-        <hr width="800" align="left" />
+    <div id="teste"></div>
+    <div class="container-fluid justfy-">
+      <div class="row">
+        <!-- NAVEGACAO -->
+        <nav class="col-g-1 navbar navbar-expand-lg bg-body-tertiary">
+          <div class="container-fluid">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto">
+              <li class="nav-item">
+                <a
+                  href="/alimentos.html"
+                  class="nav-link active"
+                  aria-current="page"
+                  >Alimentos</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  href="/acessorios.html"
+                  class="nav-link active"
+                  aria-current="page"
+                  >Acessórios</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  href="/higiene.html"
+                  class="nav-link active"
+                  aria-current="page"
+                  >Higiene e Limpeza</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  href="/servicos.html"
+                  class="nav-link active"
+                  aria-current="page"
+                  >Serviços</a
+                >
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <div class="col-m-1 d-flex flex-column justify-content-center cachorro">
+          <!-- CARROSEL -->
+          <div
+            id="carouselExampleSlidesOnly"
+            class="carousel slide text-center"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-inner text-center">
+              <div class="carousel-item active">
+                <img
+                  src="./img/joyful-dog-having-fun.jpg"
+                  class="d-block w-50"
+                  alt="..."
+                />
+              </div>
+              <div class="carousel-item text-center">
+                <img
+                  src="./img/joyful-dog-having-fun.jpg"
+                  class="d-block w-50 text-center"
+                  alt="..."
+                />
+              </div>
+              <div class="carousel-item text-center">
+                <img
+                  src="./img/joyful-dog-having-fun.jpg"
+                  class="d-block w-50 text-center"
+                  alt="..."
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- PROMOCOES -->
+        <div class="col-g-1">
+          <article class="container">
+            <div class="row justify-content-center" id="promocoes"></div>
+          </article>
+        </div>
+        <div class="col-g-1">
+          <!-- FOOTER -->
+          <footer>
+            <p>Formas de pagamento</p>
+            <img
+              src="/img/formasPagamento.jpg"
+              alt=""
+              width="500"
+            /><br /><br />
+            <p>Categorias</p>
+            <ul class="nav">
+              <li class="nav-item">
+                <a
+                  href="/puc-petshop/alimentos.html"
+                  class="nav-link active"
+                  aria-current="page"
+                  >Alimentos</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  href="/puc-petshop/acessorios.html"
+                  class="nav-link active"
+                  aria-current="page"
+                  >Acessórios</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  href="/puc-petshop/higiene.html"
+                  class="nav-link active"
+                  aria-current="page"
+                  >Higiene e Limpeza</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  href="/puc-petshop/servicos.html"
+                  class="nav-link active"
+                  aria-current="page"
+                  >Serviços</a
+                >
+              </li>
+            </ul>
+            <br />
+            <p>
+              PetZensupermarket Comércio de Produtos para Animais S.A CNPJ:
+              30.864.846/0001-90 <br />
+              Compra segura - A Zen Pet garante segurança para suas informações
+              pessoais e financeiras Copyright 2025© Todos os direitos
+              reservados à Zen Pet.
+            </p>
+          </footer>
+        </div>
       </div>
-
-      <nav>
-        <h3>Aqui tem tudo que seu pet precisa</h3>
-        <ul>
-          <li><a href="/puc-petshop/alimentos.html">Alimentos</a></li>
-          <li><a href="/puc-petshop/acessorios.html">Acessórios</a></li>
-          <li><a href="/puc-petshop/higiene.html">Higiene e Limpeza</a></li>
-          <li><a href="/puc-petshop/servicos.html">Serviços</a></li>
-        </ul>
-        <hr width="400" align="left" />
-      </nav>
-    </header>
-    <article>
-      <div>
-        <h3>Nossas Promoções</h3>
-        <img
-          src="./img/joyful-dog-having-fun.jpg"
-          alt="imagem caozinho tomando banho"
-          width="200"
-        />
-        <br />
-        <br />
-        <br />
-      </div>
-
-      <div>
-        <h4>Peiteira Tradicional - Tam. M</h4>
-        <img
-          src="./img/acessorio_02.jpg"
-          alt="embalagem com lenços umedeciodos para cães"
-          width="200"
-        />
-        <h3>de R$ <s>32,22</s> por 20,50</h3>
-        <button>Comprar</button><br /><br />
-        <hr width="400" align="left" />
-      </div>
-
-      <br />
-
-      <div>
-        <h4>Ração Seca Tropical Corideiro Cães Adultos - 2kg</h4>
-        <img
-          src="./img/racao_01.jpg"
-          alt="embalagem com lenços umedeciodos para cães"
-          width="200"
-        />
-        <h3>De R$ <s>80,45</s> por 50,90</h3>
-        <button>Comprar</button><br /><br />
-        <hr width="400" align="left" />
-      </div>
-
-      <br />
-
-      <div>
-        <h4>Shampoo Pet Society Beeps Branqueador - 500 ml</h4>
-        <img
-          src="./img/higiene_02.jpg"
-          alt="embalagem com lenços umedeciodos para cães"
-          width="200"
-        />
-        <h3>De R$ <s>36,90</s> por 20,99</h3>
-        <button>Comprar</button><br /><br />
-        <hr width="800" align="left" />
-      </div>
-      <br />
-    </article>
-
-    <footer>
-      <p>Formas de pagamento</p>
-      <img src="/img/formasPagamento.jpg" alt="" width="500" /><br /><br />
-      <p>Categorias</p>
-      <ul>
-        <li><a href="/puc-petshop/alimentos.html">Alimentos</a></li>
-        <li><a href="/puc-petshop/acessorios.html">Acessórios</a></li>
-        <li><a href="/puc-petshop/higiene.html">Higiene e Limpeza</a></li>
-        <li><a href="/puc-petshop/servicos.html">Serviços</a></li>
-      </ul>
-      <br />
-      <p>
-        PetZensupermarket Comércio de Produtos para Animais S.A CNPJ:
-        30.864.846/0001-90 <br />
-        Compra segura - A Zen Pet garante segurança para suas informações
-        pessoais e financeiras Copyright 2025© Todos os direitos reservados à
-        Zen Pet.
-      </p>
-    </footer>
+    </div>
   </body>
 </html>
